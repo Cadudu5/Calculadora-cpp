@@ -43,6 +43,10 @@ int main()
             result = number1 * number2;
             break;
         }
+
+        case 5:{
+            cout << "teste de nova branch" << endl;
+        }
         case -1:{
             return 0;
             break;
