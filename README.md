@@ -1,3 +1,6 @@
+# Calculadora
+## Programando uma calculadora do zero para aprender mais sobre C++
+
 # Utilizando o GIT
 ## Antes do primeiro passo:
 > #### É interessante ter uma chave SSH vinculada à sua conta;
