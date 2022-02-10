@@ -1,7 +1,8 @@
 #include <iostream>
-#include <string>
-
+#include <cmath>
 using namespace std;
+
+
 
 int main()
 {
@@ -14,38 +15,51 @@ int main()
 
     while (op != -1){
 
-        cout << "1 - Add operation\n2 - Subtraction operation\n3 - Division operation\n4 - Multiplication operation\n-1 to quit.\n" << endl;
-
+        cout << "1 - Add operation\n2 - Subtraction operation\n3 - Division operation\n4 - Multiplication operation\n";
+        cout << "5 - Square\n6- Square root\nType -1 to quit." << endl; 
         cout << "Which operation do you want to do? [Choose from the menu] ";
         cin >> op;
         if (op == -1){
             cout << "Thanks for using!";
             return 0;
         }
-        cout << "Enter the next number: " << endl;
-        cin >> number2;
 
 
         switch (op){
         case 1:{
+            cout << "Enter the next number: " << endl;
+            cin >> number2;
             result = number1 + number2;
             break;
         }
         case 2:{
+            cout << "Enter the next number: " << endl;
+            cin >> number2;
             result = number1 - number2;
             break;
         }
         case 3:{
+            cout << "Enter the next number: " << endl;
+            cin >> number2;
             result = number1 / number2;
             break;
         }
         case 4:{
+            cout << "Enter the next number: " << endl;
+            cin >> number2;
             result = number1 * number2;
             break;
         }
 
         case 5:{
-            cout << "teste de nova branch" << endl;
+            result = number1 * number1;
+            break;
+            
+        }
+
+        case 6: {
+            result = sqrt(number1);
+            break;
         }
         case -1:{
             return 0;
@@ -62,4 +76,6 @@ int main()
 
     return 0;
 }
+
+
 
