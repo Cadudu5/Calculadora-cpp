@@ -3,25 +3,20 @@
 using namespace std;
 
 
-
-int main()
+int calculator(int op)
 {
     int number1, number2;
-    int op;
+
     float result;
 
-    cout << "Enter a number: ";
+    cout << "Enter the first number: ";
     cin >> number1;
 
-    while (op != -1){
+    while (op != -2){
         cout << "1 - Add operation\n2 - Subtraction operation\n3 - Division operation\n4 - Multiplication operation\n";
-        cout << "5 - Square\n6 - Square root\n7 - Exponenciation\n8 - Factorial\nType -1 to quit." << endl; 
+        cout << "5 - Square\n6 - Square root\n7 - Exponenciation\n8 - Factorial\n9 - Cosine(deg)\n10 - Sine(deg)\n11 - tangent(deg)\nType -1 to erase.\nType -2 to quit." << endl; 
         cout << "Which operation do you want to do? [Choose from the menu] ";
         cin >> op;
-        if (op == -1){
-            cout << "Thanks for using!";
-            return 0;
-        }
         switch (op){
         case 1:{
             cout << "Enter the next number: " << endl;
@@ -49,8 +44,7 @@ int main()
         }
         case 5:{
             result = number1 * number1;
-            break;
-            
+            break; 
         }
         case 6: {
             result = sqrt(number1);
@@ -66,8 +60,24 @@ int main()
             result = tgamma(number1 + 1);
             break;
         }
-        case -1:{
-            return 0;
+        case 9: {
+            result = cos(number1);
+            break;
+        }
+        case 10: {
+            result = sin(number1);
+            break;
+        }
+        case 11: {
+            result = tan(number1);
+            break;
+        }
+        case -1: {
+            return op;
+            break;
+        }
+        case -2: {
+            return op;
             break;
         }
         }
@@ -75,7 +85,16 @@ int main()
         cout << "--------------------------------------------------------------\n\n";
         number1 = result;
     }
-    
+}
+
+
+int main()
+{
+    int op;
+    while (op != -2){
+        op = calculator(op);
+    }
+    cout << "Thanks for using!";
     return 0;
 }
 
