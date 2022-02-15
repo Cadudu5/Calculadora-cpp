@@ -23,6 +23,8 @@ int calculator(int op)
             cin >> number2;
             result = number1 + number2;
             system("cls");
+            cout << "\n" << number1 << " + " << number2 << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 2:{
@@ -30,6 +32,8 @@ int calculator(int op)
             cin >> number2;
             result = number1 - number2;
             system("cls");
+            cout << "\n" <<  number1 << " - " << number2 << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 3:{
@@ -37,6 +41,8 @@ int calculator(int op)
             cin >> number2;
             result = number1 / number2;
             system("cls");
+            cout << "\n" << number1 << "/" << number2 << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 4:{
@@ -44,16 +50,22 @@ int calculator(int op)
             cin >> number2;
             result = number1 * number2;
             system("cls");
+            cout << "\n" << number1 << "*" << number2 << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 5:{
             result = number1 * number1;
             system("cls");
+            cout << "\n" << "(" << number1 << ")" << "^" << 2 << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break; 
         }
         case 6: {
             result = sqrt(number1);
             system("cls");
+            cout << "\n" << "square root(" << number1 << ")" << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 7: {
@@ -61,26 +73,36 @@ int calculator(int op)
             cin >> number2;
             result = pow(number1, number2);
             system("cls");
+            cout << "\n" << "(" << number1 << ")" << "^" << number2 << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 8: {
             result = tgamma(number1 + 1);
             system("cls");
+            cout << "\n" << number1 << "!" <<  "is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 9: {
             result = cos(number1);
             system("cls");
+            cout << "\n" << "cos(" << number1 << ")" << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 10: {
             result = sin(number1);
             system("cls");
+            cout << "\n" << "sin(" << number1 << ")" << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case 11: {
             result = tan(number1);
             system("cls");
+            cout << "\n" << "tan(" << number1 << ")" << " is: " << result << "\n";
+            cout << "--------------------------------------------------------------\n\n";
             break;
         }
         case -1: {
@@ -92,8 +114,7 @@ int calculator(int op)
             break;
         }
         }
-        cout << "\nThe result is: " << result << "\n";
-        cout << "--------------------------------------------------------------\n\n";
+    
         number1 = result;
     }
 }
