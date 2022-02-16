@@ -9,12 +9,17 @@ int calculator(int op)
 
     float result;
 
+    cout << "\nWelcome to the Calculator!\n";
     cout << "Enter the first number: ";
     cin >> number1;
 
     while (op != -2){
-        cout << "1 - Add operation\n2 - Subtraction operation\n3 - Division operation\n4 - Multiplication operation\n";
-        cout << "5 - Square\n6 - Square root\n7 - Exponenciation\n8 - Factorial\n9 - Cosine(deg)\n10 - Sine(deg)\n11 - tangent(deg)\nType -1 to erase.\nType -2 to quit." << endl; 
+        cout << "\n\t\t\tMENU ";  
+        cout << "\n_______________________________________________________" << endl;
+        cout << "(1) Add operation\t| (2) Subtraction operation\n(3) Division operation\t| (4) Multiplication operation\n";
+        cout << "(5) Square\t\t| (6) Square root\n(7) Exponenciation\t| (8) Factorial\n(9) Cosine(deg)\t\t| (10) Sine(deg)\n(11) tangent(deg)\t|\n" << endl; 
+        cout << "Type (-1) to erase or Type (-2) to quit...";
+        cout << "\n--------------------------------------------------------" << endl;
         cout << "Which operation do you want to do? [Choose from the menu] ";
         cin >> op;
         switch (op){
