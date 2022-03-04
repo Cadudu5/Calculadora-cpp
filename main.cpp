@@ -26,7 +26,7 @@ int calculator(char op)
         cin >> op;
         switch (op){
         case '+':{
-            cout << "Enter the next number: " << endl;
+            cout << "Enter the next number: ";
             cin >> number2;
             result = number1 + number2;
             system("cls");
@@ -35,7 +35,7 @@ int calculator(char op)
             break;
         }
         case '-':{
-            cout << "Enter the next number: " << endl;
+            cout << "Enter the next number: ";
             cin >> number2;
             result = number1 - number2;
             system("cls");
@@ -44,20 +44,20 @@ int calculator(char op)
             break;
         }
         case '/':{
-            cout << "Enter the next number: " << endl;
+            cout << "Enter the next number: ";
             cin >> number2;
             result = number1 / number2;
             system("cls");
-            cout << "\n" << number1 << "/" << number2 << " = " << result << "\n";
+            cout << "\n" << number1 << " / " << number2 << " = " << result << "\n";
             cout << "--------------------------------------------------------------\n";
             break;
         }
         case '*':{
-            cout << "Enter the next number: " << endl;
+            cout << "Enter the next number: ";
             cin >> number2;
             result = number1 * number2;
             system("cls");
-            cout << "\n" << number1 << "*" << number2 << " = " << result << "\n";
+            cout << "\n" << number1 << " * " << number2 << " = " << result << "\n";
             cout << "--------------------------------------------------------------\n";
             break;
         }
@@ -87,7 +87,7 @@ int calculator(char op)
         case '!': {
             result = tgamma(number1 + 1);
             system("cls");
-            cout << "\n" << number1 << "!" <<  "= " << result << "\n";
+            cout << "\n" << number1 << "!" <<  " = " << result << "\n";
             cout << "--------------------------------------------------------------\n";
             break;
         }
